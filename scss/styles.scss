@@ -1,0 +1,651 @@
+@import "variables";
+/*reset y body*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: $fuenteBody;
+}
+
+
+/*menu de navegacion*/
+.menuDeNavegacion{
+    list-style: none;
+    padding: 20px;
+    background: $colorPrincipal;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    text-align: center;
+    position: sticky;
+    top: 0.05px;
+
+    li a{
+        text-decoration: none;
+        color: $colorSecundario;
+        padding: 30px;
+        display: block;
+        transition: .3s ease-in-out;
+    }
+    li{
+        display: inline-block;
+        text-align: center;
+    }
+    li a:hover{
+        background:$colorSecundario;
+        color: $colorPrincipal !important; 
+    }
+}
+
+@media only screen and (min-width:768px){
+    .menuDeNavegacion{
+       padding: 0; 
+    }    
+}
+
+
+
+/*parrallax y titulos*/
+.parallaxCompleto{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallaxMediano{
+    height: 450px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.textoHero .titulo{
+    background: #111;
+    padding: 18px;
+    width: 320px;
+    text-align: center;
+    color: $colorSecundario;
+    font-weight: 700;
+}
+.titulo{
+    color:$colorPrincipal;
+    font-family: $fuenteTitulos;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+p{
+    color: #676D76;
+}
+
+
+.textoIntroduccion{
+    text-align: justify;
+    font-size: 20px;
+    max-width: 1100px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.espacio{
+   padding: 30px 0 60px 0; 
+
+   h2{
+    text-align: center;
+    padding: 30px;
+}
+}
+
+/*PARALLAX SECTION*/   
+/*imagenes de cada parallax para version mobile*/
+.parallaxLeviHome{
+    background-image: url(../media/leviChiquito.jpg);
+}
+
+.parallaxSNK{
+    background-image: url(../media/SNKChiquito.jpg);
+}
+
+.parallaxTrama{
+    background-image: url(../media/leviYErenChiquito.jpg); 
+}
+
+.parallaxWhosLevi{
+    background-image: url(../media/leviHeroCortado.png);
+
+}
+
+.parallaxLegion{
+    background-image: url(../media/legionDeReconocimientoMobile.jpg);
+    
+}
+
+.parallaxLegionAshe{
+    background-image: url(../media/legionAsheChiquito.jpeg);
+    background-attachment: fixed;
+}
+
+.parallaxCaracteristicas{
+    background-image: url(../media/legionYTitanChiquito.jpg);
+}
+
+.parallaxLegionNashe{
+    background-image: url(../media/legionNasheChiquito.jpg);
+}
+
+.parallaxBestMoments{
+    background-image: url(../media/LeviBestMomentsChiquito.jpg);
+}
+
+.parallaxLeviVsTitan{
+    background-image: url(../media/leviVsBeast.jpg);
+}
+
+.parallaxLeviVsKenny{
+    background-image: url(../media/leviVsKenny.jpg);
+}
+
+.parallaxLeviVsAnnie{
+    background-image: url(../media/leviVsFemaleTitan.jpg);
+}
+
+.parallaxLeviFachero{
+    background-image: url(../media/leviFachero.jfif);
+}
+
+/*imagenes de cada parallax para version tablet*/
+@media only screen and (min-width: 768px){
+    .parallaxLeviHome{
+        background-image: url(../media/leviChiquito.jpg);
+    }
+    
+    .parallaxSNK{
+        background-image: url(../media/SNKChiquito.jpg);
+    }
+    
+    .parallaxTrama{
+        background-image: url(../media/leviYErenChiquito.jpg); 
+    }
+    
+    .parallaxWhosLevi{
+        background-image: url(../media/leviHeroCortado.png);
+    
+    }
+    
+    .parallaxLegion{
+        background-image: url(../media/legionDeReconocimientoMobile.jpg);
+        
+    }
+    
+    .parallaxLegionAshe{
+        background-image: url(../media/legionAsheChiquito.jpeg);
+        background-attachment: fixed;
+    }
+    
+    .parallaxCaracteristicas{
+        background-image: url(../media/legionYTitanChiquito.jpg);
+    }
+    
+    .parallaxLegionNashe{
+        background-image: url(../media/legionNasheChiquito.jpg);
+    }
+    
+    .parallaxBestMoments{
+        background-image: url(../media/LeviBestMomentsChiquito.jpg);
+    }
+    
+    .parallaxLeviVsTitan{
+        background-image: url(../media/leviVsBeast.jpg);
+    }
+    
+    .parallaxLeviVsKenny{
+        background-image: url(../media/leviVsKenny.jpg);
+    }
+    
+    .parallaxLeviVsAnnie{
+        background-image: url(../media/leviVsFemaleTitan.jpg);
+    }
+    
+    .parallaxLeviFachero{
+        background-image: url(../media/leviFachero.jfif);
+    }
+}
+
+
+/*imagenes de cada parallax para version desktop*/
+
+@media only screen and (min-width:992px){
+    .parallaxLeviHome{
+        background-image: url(../media/levi.jpg);
+    }
+    
+    .parallaxSNK{
+        background-image: url(../media/SNK.jpg);
+    }
+    
+    .parallaxTrama{
+        background-image: url(../media/leviYEren.jpg);  
+    }
+    
+    .parallaxWhosLevi{
+        background-image: url(../media/leviHero.png);
+    
+    }
+    
+    .parallaxLegion{
+        background-image: url(../media/legionDeReconocimiento.png);
+    }
+    
+    .parallaxLegionAshe{
+        background-image: url(../media/legionAshe.jpeg);
+    }
+    
+    .parallaxCaracteristicas{
+        background-image: url(../media/legionYTitan.jpg);
+    }
+    
+    .parallaxLegionNashe{
+        background-image: url(../media/legionNashe.jpg);
+    }
+    
+    .parallaxBestMoments{
+        background-image: url(../media/LeviBestMoments.jpg);
+    }
+    
+    .parallaxLeviVsTitan{
+        background-image: url(../media/leviVsBeast.jpg);
+    }
+    
+    .parallaxLeviVsKenny{
+        background-image: url(../media/leviVsKenny.jpg);
+    }
+    
+    .parallaxLeviVsAnnie{
+        background-image: url(../media/leviVsFemaleTitan.jpg);
+    }
+    
+    .parallaxLeviFachero{
+        background-image: url(../media/leviFachero.jfif);
+    }
+}
+
+
+
+/*cierra imagenes de cada parallax*/
+
+.encabezados{
+    font-family: $fuenteEncabezados;
+    color: $colorPrincipal;
+    font-size: 55px;
+    text-align: center;
+    background-color: $colorTerciario;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subEncabezado{
+    font-family: $fuenteEncabezados;
+    font-size: 40px;
+    color:$colorPrincipal ;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.textoExplicativo{
+    text-align: justify;
+    font-size: 20px;
+    max-width: 1100px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+/*imagenes y videos*/
+
+.heroImage{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+/*.apariencia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apariencia .textoExplicativo{
+    flex-grow: 1;
+}*/
+
+.personalidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+
+    .textoExplicativo{
+        flex-grow: 1;
+        padding: 10px;
+    }
+}
+
+
+
+.grid3Col{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem; 
+}
+
+.imagenAlCostado{
+    width: 100%; 
+    margin: auto;
+    padding: 1rem;
+}
+
+.imagenAlOtroCostado{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.grid2Col{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.imagenAlCostadoLevi{
+    width: 100%;
+    margin: auto;
+
+}
+
+@media only screen and (min-width:576px){
+    .grid3Col{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .imagenAlCostado{
+        width: 100%; 
+        margin: 10px;
+    }
+    .grid2Col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:768px){
+    .grid3Col{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .imagenAlCostado{
+        width: 100%; 
+        margin: 10px;
+    }
+    .grid2Col{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .imagenAlCostado{
+        width: 75%; 
+        margin: auto;
+        padding: 1rem;
+    }
+    
+    .imagenAlOtroCostado{
+        width: 75%;
+        margin: auto;
+        padding: 1rem;
+    }
+    .imagenAlCostadoLevi{
+        width: 75%;
+        margin: auto;
+    
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .grid3Col{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .imagenAlCostado{
+        width: 100%; 
+        margin: 10px;
+    }
+    .grid2Col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.seccionesFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gifAlMedio{
+    width: 100%;
+    margin:auto;
+    padding: 1rem;
+}
+
+@media only screen and (min-width:576px){
+    .gifAlMedio{
+        width: 50%;
+        margin-top: 10px;
+    }
+}
+
+/*iframe*/
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 576px){
+    .iframe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px
+    }
+}
+
+.linea{
+    width: 90%;
+    border: 2px solid $colorTerciario;
+}
+
+
+/*formulario*/
+.imagenDeFondo{
+    background-image: url(../media/muchaFachaLevi3Chiquito.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 768px){
+    .imagenDeFondo{
+        background-image: url(../media/muchaFachaLevi3Mediano.jfif);
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .imagenDeFondo{
+        background-image: url(../media/muchaFachaLevi3.jfif);
+    }
+}
+/*empiezo a aplicar bem*/
+
+
+.contenedor .form{
+    background: rgba(0, 0, 0, .6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 50px;
+    padding-bottom: 40px;
+    border-radius: 3px;
+
+    .form__header {
+        font-weight: normal;
+        font-family: sans-serif;
+        color: #ccc;
+        text-align: center;
+        padding: 14px 0;
+    }
+
+    .form__titulo{
+        color: #ccc;
+        padding-top: 10px;
+    }
+
+    .form__label{
+        display: block;
+        color: #ccc;
+        font-size: 16px;
+        font-family: sans-serif;
+        padding: 19px;
+    }
+
+    .form__input, .form__textarea{
+        background: rgba(0, 0, 0, .7);
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgb(68, 68, 68);
+        width: 100%;
+        padding: 12px;
+        border-radius: 2px;
+        font-size: 14px;
+        color:#fff;
+        font-family: sans-serif;
+    }
+    .form__textarea{
+        resize: vertical;
+        min-height: 222px;
+        max-height: 222px;
+    }
+    .form__button{
+        width: 100%;
+        font-family: sans-serif;
+        outline: none;
+        background: #000;
+        font-size: 16px;
+        border: none;
+        color: white;
+        padding: 20px 0;
+        cursor: pointer;
+    }
+    .form__texto{
+        color: #ffffff;
+    }
+}
+
+
+/*footer*/
+
+.footer{
+    background-color: #1A181B;
+    padding: 20px; 
+
+    .textoFooter p{
+        color: #fff;
+        font-size: 17px;
+    }
+
+    a{
+        color: yellow;
+        font-style: italic;
+        transition: .3s ease-in-out;
+    }
+
+    a:hover{
+        color: #aaaa10;
+        text-decoration: none;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 768px){
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+a.socialMediaIcon:first-of-type{
+    margin-left: 0;
+
+}
+@media only screen and (max-width: 768px){
+    .iconosRedesSociales{
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .footer .textoFooter p{
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+}
+
+
+ 
+.footerContent{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socialMediaIcon {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+
+    i {
+        font-size: 30px;
+        line-height: 60px;
+    }
+}
+.socialMediaIcon:hover{
+    background: #777272ff;
+    color: yellow;
+}
