@@ -70,7 +70,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+h2 .titulo{
+    text-align: center;
+}
 .textoHero .titulo{
     background: #111;
     padding: 18px;
@@ -80,9 +82,7 @@ body{
     font-weight: 700;
 }
 
-h2 .titulo{
-    text-align: center;
-}
+
 .textoHero{
     width: 400px;
 }
