@@ -74,10 +74,13 @@ body{
 .textoHero .titulo{
     background: #111;
     padding: 18px;
-    width: 320px;
+    width: 100%;
     text-align: center;
     color: $colorSecundario;
     font-weight: 700;
+}
+.textoHero{
+    width: 400px;
 }
 .titulo{
     color:$colorPrincipal;
